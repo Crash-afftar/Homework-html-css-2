@@ -1,0 +1,214 @@
+/*Roboto Regular356 Roboto Bold330 Roboto Medium270 Raleway Bold52 Roboto Black20*/
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --background-our-team: #f5f4fa;
+  --background-hero-footer: #2f303a;
+  --accent-color: #2196f3;
+  --text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --footer-contacts: rgba(255, 255, 255, 0.6);
+  --portfolio-works: #eeeeee;
+}
+body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link,
+.contact {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.logo-web,
+.logo-studio {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+.logo-studio {
+  color: var(--black-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+  text-shadow: var(--text-shadow);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.contacts .contact:hover,
+.contacts .contact:focus {
+  color: var(--accent-color);
+}
+.hero {
+  background-color: var(--background-hero-footer);
+}
+.hero-tittle {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.invisible {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.section-tittle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+.features {
+  list-style: none;
+}
+.features-tittle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--black-color);
+}
+.features-text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.section.team {
+  background-color: var(--background-our-team);
+}
+.section.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.section.team li:hover {
+  border: 1px solid #000000;
+  text-shadow: var(--text-shadow);
+}
+.section.team p {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+/*Footer section*/
+.footer {
+  background-color: var(--background-hero-footer);
+}
+.footer .logo-studio {
+  color: var(--white-color);
+}
+
+.footer .adress,
+.footer .contact {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+.footer .adress {
+  color: var(--white-color);
+}
+.footer .contact {
+  color: var(--footer-contacts);
+}
+
+/*Porrtfolio*/
+.our-works-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  border: none;
+  width: 125px;
+  height: 38px;
+  left: 593px;
+  top: 174px;
+  background: var(--background-our-team);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.our-works-button:hover,
+.our-works-button:focus {
+  width: 125px;
+  height: 38px;
+  left: 593px;
+  top: 174px;
+  color: var(--portfolio-works);
+  background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.example-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--black-color);
+}
+.example-descr {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+}
+.examle li {
+  background-color: #eeeeee;
+}

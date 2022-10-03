@@ -7,7 +7,6 @@
   --background-our-team: #f5f4fa;
   --background-hero-footer: #2f303a;
   --accent-color: #2196f3;
-  --text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --footer-contacts: rgba(255, 255, 255, 0.6);
   --portfolio-works: #eeeeee;
 }
@@ -21,8 +20,7 @@ body {
   list-style: none;
 }
 
-.link,
-.contact {
+.link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -30,7 +28,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-
+/* LOGO */
 .logo-web,
 .logo-studio {
   text-decoration: none;
@@ -50,15 +48,23 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  text-shadow: var(--text-shadow);
 }
 .site-nav .link.current {
   color: var(--accent-color);
+}
+.contact {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 .contacts .contact:hover,
 .contacts .contact:focus {
   color: var(--accent-color);
 }
+/* HERO */
 .hero {
   background-color: var(--background-hero-footer);
 }
@@ -91,6 +97,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--black-color);
 }
+/* Features */
 .features {
   list-style: none;
 }
@@ -110,6 +117,7 @@ body {
   color: var(--primary-text-color);
 }
 .button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -120,9 +128,15 @@ body {
   color: var(--white-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
   cursor: pointer;
 }
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
+}
+/* OUR TEAM */
 .section.team {
   background-color: var(--background-our-team);
 }
@@ -135,10 +149,6 @@ body {
   color: var(--secondary-text-color);
 }
 
-.section.team li:hover {
-  border: 1px solid #000000;
-  text-shadow: var(--text-shadow);
-}
 .section.team p {
   font-size: 16px;
   line-height: 19px;
@@ -146,6 +156,9 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+}
+.section.team li {
+  background-color: var(--white-color);
 }
 /*Footer section*/
 .footer {
@@ -172,6 +185,7 @@ body {
 
 /*Porrtfolio*/
 .our-works-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
